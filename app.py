@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello from APPUiO Cloud!"
+    return "Hello!"
+
+@app.route("/swisscom-sbtkpoc")
+def contact():
+    return "Sourav Sahana"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
